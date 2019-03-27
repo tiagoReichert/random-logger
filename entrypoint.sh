@@ -1,9 +1,6 @@
 #!/bin/sh
 while [ 1 ]
 do
-   waitTime=$(shuf -i 1-5 -n 1)
-   sleep $waitTime &
-   wait $!
    instruction=$(shuf -i 0-4 -n 1)
    d=`date -Iseconds`
    case "$instruction" in
